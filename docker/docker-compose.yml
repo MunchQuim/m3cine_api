@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest  # Puedes usar otra versión si lo prefieres
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword  # Contraseña del usuario root de MySQL
+      MYSQL_DATABASE: cineHidalgo   # Nombre de la base de datos por defecto
+      MYSQL_USER: admin                 # Nombre de usuario adicional
+      MYSQL_PASSWORD: 1234  # Contraseña para el usuario adicional
+    ports:
+      - "3300:3306"  # Mapea el puerto 3306 del contenedor al puerto 3306 de tu máquina local
+    volumes:
+      - m3_mysql_data:/var/lib/mysql  # Persistir los datos entre reinicios
+    networks:
+      - m3_mysql_network
+
+volumes:
+  m3_mysql_data:  # Definir un volumen persistente para los datos
+    driver: local
+
+networks:
+  m3_mysql_network:
+    driver: bridge
