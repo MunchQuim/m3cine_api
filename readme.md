@@ -11,6 +11,6 @@ si todo ha salido bien podremos pasar al siguiente punto.
 actualmente solo se tiene desarrollado el uso del API para las peliculas.
 Para poder trabajar con ello debemos ir a 'Admin'.
 Nos llevará a una vista donde:
- - si clicamos sobre 'Añadir pelicula' se nos abrirá un formulario donde colocar sus datos.
- - si clicamos sobre 'Ver peliculas' nos mostrara las peliculas subidas.
+    - si clicamos sobre 'Añadir pelicula' se nos abrirá un formulario donde colocar sus datos.
+    - si clicamos sobre 'Ver peliculas' nos mostrara las peliculas subidas.
 
