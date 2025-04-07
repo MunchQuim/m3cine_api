@@ -8,6 +8,7 @@
 si todo ha salido bien podremos pasar al siguiente punto.
 
 3. Abrimos m3Proyecto con netbeans y ejecutamos, nos llevará a la interfaz gráfica del cine.
+- si Gson da problemas deberá descargarse el .jar desde "https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.8/" y colocarlo en lib/copyLib: actualmente el proyecto funciona con  la v2.8.8 
 actualmente solo se tiene desarrollado el uso del API para las peliculas.
 Para poder trabajar con ello debemos ir a 'Admin'.
 Nos llevará a una vista donde:
